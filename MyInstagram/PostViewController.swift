@@ -14,7 +14,7 @@ import SVProgressHUD
 
 
 
-class PostViewController: UIViewController {
+class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var image: UIImage!
     
     
@@ -22,7 +22,8 @@ class PostViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextField!
     
-    
+
+        
     
     // 投稿ボタンをタップしたときに呼ばれるメソッド
     @IBAction func handlePostButton(sender: UIButton) {
@@ -47,8 +48,6 @@ class PostViewController: UIViewController {
         SVProgressHUD.showSuccess(withStatus: "投稿しました")
         
         
-        // HUDで投稿完了を表示する
-        SVProgressHUD.showSuccess(withStatus: "投稿しました")
         
         
         // 全てのモーダルを閉じる
@@ -62,16 +61,52 @@ class PostViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+ 
+    
         // 受け取った画像をImageViewに設定する
         imageView.image = image
     }
     
+
+    @IBAction func goToISV(_ sender: Any) {
+        // ライブラリ（カメラロール）を指定してピッカーを開く
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let pickerController = UIImagePickerController()
+            pickerController.delegate = self
+            pickerController.sourceType = .photoLibrary
+            self.present(pickerController, animated: true, completion: nil)
+        }
+    }
+    // 写真を撮影/選択したときに呼ばれるメソッド
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        print("呼ばれている")
+        if info[.originalImage] != nil {
+            print("if文の中が呼ばれている")
+            // 撮影/選択された画像を取得する
+            let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+            
     
+            imageView.image = image
+            
+            picker.dismiss(animated: true, completion: nil)
+            // あとでCLImageEditorライブラリで加工する
+            print("DEBUG_PRINT: image = \(image)")
+            // CLImageEditorにimageを渡して、加工画面を起動する。
+            
+            //以下でAdobeのCLImageEditorを使わない設定とする
+            //            let editor = CLImageEditor(image: image)!
+            //            editor.delegate = self as! CLImageEditorDelegate
+            //            picker.pushViewController(editor, animated: true)
+        }
+    }
+    
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        // 閉じる
+        picker.dismiss(animated: true, completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; normalTitle = "アカウント作成"; ObjectID = "1Y9-OJ-IEm"; */
+"1Y9-OJ-IEm.normalTitle" = "アカウント作成";
+
+/* Class = "UIButton"; normalTitle = "写真選択"; ObjectID = "2hT-i2-lb5"; */
+"2hT-i2-lb5.normalTitle" = "写真選択";
+
+/* Class = "UIButton"; normalTitle = "カメラ"; ObjectID = "6Tq-cb-gHe"; */
+"6Tq-cb-gHe.normalTitle" = "カメラ";
+
+/* Class = "UIButton"; normalTitle = "ログアウト"; ObjectID = "8lv-fS-DQX"; */
+"8lv-fS-DQX.normalTitle" = "ログアウト";
+
+/* Class = "UITextField"; placeholder = "パスワード"; ObjectID = "MjJ-8E-ayp"; */
+"MjJ-8E-ayp.placeholder" = "パスワード";
+
+/* Class = "UIButton"; normalTitle = "キャンセル"; ObjectID = "PRK-Z9-7dG"; */
+"PRK-Z9-7dG.normalTitle" = "キャンセル";
+
+/* Class = "UITextField"; placeholder = "キャプション"; ObjectID = "aIn-Kb-e3a"; */
+"aIn-Kb-e3a.placeholder" = "キャプション";
+
+/* Class = "UIButton"; normalTitle = "投稿"; ObjectID = "dHG-vy-GNN"; */
+"dHG-vy-GNN.normalTitle" = "投稿";
+
+/* Class = "UITextField"; placeholder = "メールアドレス"; ObjectID = "mEu-Yn-G5V"; */
+"mEu-Yn-G5V.placeholder" = "メールアドレス";
+
+/* Class = "UIButton"; normalTitle = "ログイン"; ObjectID = "ojy-uF-j91"; */
+"ojy-uF-j91.normalTitle" = "ログイン";
+
+/* Class = "UIButton"; normalTitle = "表示名を変更"; ObjectID = "ske-NE-pAu"; */
+"ske-NE-pAu.normalTitle" = "表示名を変更";
+
+/* Class = "UIButton"; normalTitle = "キャンセル"; ObjectID = "tOM-lU-be1"; */
+"tOM-lU-be1.normalTitle" = "キャンセル";
+
+/* Class = "UITextField"; placeholder = "名前"; ObjectID = "uSs-i4-jdb"; */
+"uSs-i4-jdb.placeholder" = "名前";
+
+/* Class = "UIButton"; normalTitle = "ライブラリ"; ObjectID = "umf-P8-3bL"; */
+"umf-P8-3bL.normalTitle" = "ライブラリ";
+
+/* Class = "UITextField"; placeholder = "アカウント作成時は表示名を入力"; ObjectID = "wsV-9N-kvS"; */
+"wsV-9N-kvS.placeholder" = "アカウント作成時は表示名を入力";

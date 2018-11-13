@@ -40,6 +40,8 @@
 		6A510B33218C84590033A1FB /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		6A510B35218C8F570033A1FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6AB12D79218E6AB000D15F43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6AE9EF4521986FD40002D047 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		6AE9EF4621986FD50002D047 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6AF61BFF218DC1700078072C /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		6AF61C01218DC2960078072C /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		6AF61C03218DC3F50078072C /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
@@ -106,12 +108,12 @@
 				6A510B1B218C80D90033A1FB /* Main.storyboard */,
 				6A510B33218C84590033A1FB /* SettingViewController.swift */,
 				6AF61C01218DC2960078072C /* Const.swift */,
-				6AF61C03218DC3F50078072C /* PostData.swift */,
 				6AF61BFF218DC1700078072C /* PostViewController.swift */,
+				6AF61C03218DC3F50078072C /* PostData.swift */,
+				6AF61C07218DC5790078072C /* PostTableViewCell.swift */,
 				6A510B1E218C80DC0033A1FB /* Assets.xcassets */,
 				6A510B20218C80DC0033A1FB /* LaunchScreen.storyboard */,
 				6A510B23218C80DC0033A1FB /* Info.plist */,
-				6AF61C07218DC5790078072C /* PostTableViewCell.swift */,
 				6AF61C08218DC5790078072C /* PostTableViewCell.xib */,
 				6AB12D79218E6AB000D15F43 /* GoogleService-Info.plist */,
 			);
@@ -270,6 +272,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6A510B1C218C80D90033A1FB /* Base */,
+				6AE9EF4521986FD40002D047 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6A510B21218C80DC0033A1FB /* Base */,
+				6AE9EF4621986FD50002D047 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -289,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -350,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -70,8 +70,8 @@ class ViewController: UIViewController {
         tabBarController.highlightButton(at: 1)
         tabBarController.setAction({
             // ボタンが押されたらImageViewControllerをモーダルで表示する
-            let imageViewController = self.storyboard?.instantiateViewController(withIdentifier: "ImageSelect")
-            self.present(imageViewController!, animated: true, completion: nil)
+            let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post")
+            self.present(postViewController!, animated: true, completion: nil)
         }, at: 1)
     }
 }
