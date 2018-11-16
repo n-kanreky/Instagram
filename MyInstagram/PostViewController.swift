@@ -39,8 +39,11 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         
         // 辞書を作成してFirebaseに保存する
+        //１）Database.database().reference()までで、このプロジェクトをFirebaseの中から探している　＝　自分のプロジェクトが見つかる！
         let postRef = Database.database().reference().child(Const.PostPath)
         let postDic = ["caption": textView.text!, "image": imageString, "time": String(time), "name": name!]
+        //以下がFirebaseのメソッドで、postRefにランダムの文字列を形成
+        //setValueで、用意した辞書型のデータを保存する
         postRef.childByAutoId().setValue(postDic)
         
         
